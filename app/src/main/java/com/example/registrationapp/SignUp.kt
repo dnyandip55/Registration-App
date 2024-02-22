@@ -1,8 +1,10 @@
 package com.example.registrationapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.database.DatabaseReference
@@ -43,6 +45,12 @@ class SignUp : AppCompatActivity() {
                 Toast.makeText(this,"Failed to Register",Toast.LENGTH_SHORT).show()
             }
 
+        }
+
+        val signIn=findViewById<Button>(R.id.signInActivity)
+        signIn.setOnClickListener(){
+            val i=Intent(this,SignIn::class.java)
+            startActivity(i)
         }
 
     }
