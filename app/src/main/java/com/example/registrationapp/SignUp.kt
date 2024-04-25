@@ -42,7 +42,7 @@ class SignUp : AppCompatActivity() {
                 etPassword.text=null
 
             }.addOnFailureListener(){
-                Toast.makeText(this,"Failed to Register",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,"Failed to Register",Toast.LENGTH_SHORT).show()
             }
 
         }
